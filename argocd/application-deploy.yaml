@@ -70,7 +70,11 @@ items:
               secretKeyRef:
                 key: database-password
                 name: argocd-pipeline-practice-java
-          image: image-registry.openshift-image-registry.svc:5000/user5-development/pipeline-practice-java:latest
+          #image: image-registry.openshift-image-registry.svc:5000/user5-development/pipeline-practice-java:latest
+          # job 8
+          image: image-registry.openshift-image-registry.svc:5000/user5-development/pipeline-practice-java:cde7f23a509a5b9c4c218821638e63407a92b390
+          # job 9
+          #image: image-registry.openshift-image-registry.svc:5000/user5-development/pipeline-practice-java:
           livenessProbe:
             httpGet:
               path: /health
