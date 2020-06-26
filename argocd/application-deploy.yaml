@@ -72,9 +72,9 @@ items:
                 name: argocd-pipeline-practice-java
           #image: image-registry.openshift-image-registry.svc:5000/user5-development/pipeline-practice-java:latest
           # job 8
-          image: image-registry.openshift-image-registry.svc:5000/user5-development/pipeline-practice-java:cde7f23a509a5b9c4c218821638e63407a92b390
+          #image: image-registry.openshift-image-registry.svc:5000/user5-development/pipeline-practice-java:cde7f23a509a5b9c4c218821638e63407a92b390
           # job 9
-          #image: image-registry.openshift-image-registry.svc:5000/user5-development/pipeline-practice-java:
+          image: image-registry.openshift-image-registry.svc:5000/user5-development/pipeline-practice-java:e3e3877f6fbf27ab112f714e0633bc0ee47d2ec1
           livenessProbe:
             httpGet:
               path: /health
