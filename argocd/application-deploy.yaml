@@ -197,5 +197,12 @@ items:
           namespace: openshift
       type: ImageChange
     - type: ConfigChange
+- apiVersion: v1
+  kind: Secret
+  metadata:
+    name: argocd-test-secret
+  stringData:
+    database-password: password
+    database-user: test
 kind: List
 metadata: {}
